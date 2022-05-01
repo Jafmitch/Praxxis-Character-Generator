@@ -1,9 +1,13 @@
 <template>
-    <div>Hello World!</div>
+    <div>
+        <character-header></character-header>
+    </div>
 </template>
 
 <script>
+import CharacterHeader from "./components/CharacterHeader.vue";
 export default {
+    components: { CharacterHeader },
     name: "App",
 };
 </script>
@@ -15,6 +19,5 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
 }
 </style>
